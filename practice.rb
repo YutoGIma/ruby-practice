@@ -80,3 +80,35 @@ print("\n")
 0.step(6, 1.2){|num|
     print(num, "\n")
 }
+
+i = 0
+j = 0
+print("loop-------------------------------")
+print("\n")
+loop{
+    i = i + 1
+    print(i, "週目 \n")
+    loop{
+        j = j + 1
+        if j % 3 == 0
+            print("j=", j, "\n")
+            redo
+        end
+        print("j通過 j=",j, "\n")
+        if j > 10
+            break
+        end
+    }
+    if i % 2 == 0
+        print("偶数種目のためyesなし\n")
+        print("looooooooooooooooooopend\n")
+        next
+    end
+    print("yes\n")
+    if i > 10
+        break
+    end
+    print("looooooooooooooooooopend\n")
+}
+print("j=",j, "\n")
+
