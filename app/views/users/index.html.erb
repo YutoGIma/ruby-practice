@@ -5,6 +5,7 @@
             <p><%= user.id %></p>
             <p><%= user.name %></p>
             <p><%= user.email %></p>
+            <%= link_to "詳細", user_path(user.id) %>
         </div>
     <% end %>
 </div>
