@@ -33,3 +33,9 @@ https://www.javadrive.jp/ruby/
 https://qiita.com/Yusuke_Hoirta/items/3a50d066af3bafbb8641
 
 https://mseeeen.msen.jp/rails-docker/
+
+## rail入門資料
+
+https://railstutorial.jp/chapters/beginning?version=7.0
+
+https://www.tohoho-web.com/ex/rails.html
