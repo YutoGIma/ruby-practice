@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   post "users", to: "users#create"
   # ユーザー詳細取得
   get "/users/:id", to: "users#show", as: :user
+  # ユーザー編集フォームを取得
+  get "/users/:id/edit", to: "users#edit", as: :edit_user
+  # ユーザー情報更新
+  patch "/users/:id", to: "users#update"
 end
