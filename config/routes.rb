@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get "/users/:id/edit", to: "users#edit", as: :edit_user
   # ユーザー情報更新
   patch "/users/:id", to: "users#update"
+  # ユーザーの削除
+  delete "/users/:id", to: "users#destroy"
 end
