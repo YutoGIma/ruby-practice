@@ -1,21 +1,3 @@
 <h1>ユーザー編集</h1>
-<%= form_with model: @user do |form| %>
-    <div>
-        <%= form.label :name %>
-        <%= form.text_field :name %>
-    </div>
-    <div>
-        <%= form.label :email %>
-        <%= form.text_field :email %>
-    </div>
-    <div>
-        <%= form.label :password %>
-        <%= form.password_field :password %>
-    </div>
-    <div>
-        <%= form.label :explanation %>
-        <%= form.text_area :explanation %>
-    </div>
-    <div><%= form.submit "変更" %></div>
-<% end %>
+<%= render partial: "form", locals:{submit_message: "変更"} %>
 <%= link_to "一覧へ戻る", users_path %>
