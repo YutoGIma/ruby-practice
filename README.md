@@ -43,3 +43,7 @@ https://www.tohoho-web.com/ex/rails.html
 ## Rspec導入
 
 https://qiita.com/suketa/items/d783ac61c2a3e4c16ad4
+
+## ページネーション導入
+
+https://qiita.com/rio_threehouse/items/313824b90a31268b0074

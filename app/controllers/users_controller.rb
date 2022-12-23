@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     # ユーザー一覧取得
     def index
-        @users = User.all
+        @users = User.all.page(params[:page])
     end
 
     # ユーザーの詳細取得
