@@ -20,8 +20,9 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             redirect_to @user
-        else
-            render :new, status: :unprocessable_entity
+        elsif @user.valid? == false
+            # render status: 400, json: { status: 400, message: @user.errors.full_messages }
+            render json: { errors: @user.errors.as_json }, status: :unprocessable_entity
         end
     end
 
