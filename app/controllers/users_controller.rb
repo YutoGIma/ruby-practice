@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     # ユーザーの詳細取得
     def show
         @user = User.find(params[:id])
+        render json: @user
     end
 
     # ユーザー新規登録画面取得
